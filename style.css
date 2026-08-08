@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+html,body{
+    width:100%;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background-color: var(--bg-primary-color);
+     color:var(--text-primary)
+}
+main{
+    width:100%;
+}
+main section{
+    width: 100%;
+    padding: var(--padding-lg);
+}
+.btn{
+    padding: var(--padding-sm) var(--padding-lg);
+    border:none;
+    outline:none;
+    border-radius: var(--border-r-md);
+    background-color:var(--bg-tertiary-color) ;
+    cursor: pointer;
+    color:var(--bg-primary-color)
+}
+#reset-btn{
+    background-color: var(--bg-reset);
+    color:var(--text-primary);
+    font-size: var(--font-size-md);
+}
+#download-btn{
+    background-color: var(--bg-download) ;
+    color:var(--text-primary);
+    font-size: var(--font-size-md);
+}
+main section .left{
+    display:flex;
+    flex-direction: column;
+    gap:var(--gutter-xl);
+    width: 65%;
+}
+
+main section .top{
+    display: flex;
+    justify-content: space-evenly;  
+    align-items: center;
+    gap: var(--gutter-xl)
+}
+
+main section .bottom{
+    background-color: var(--bg-secondary-color);
+    padding: var(--padding-2xl);
+    width:100%;
+    aspect-ratio: 5/2.3;
+    border-radius: var(--border-r-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section .bottom .placeholder{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.6;
+}
+main section .bottom .placeholder i{
+    font-size: 10rem;
+}
+main section .bottom .placeholder p{
+    font-size: var(--font-size-lg);
+}
