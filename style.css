@@ -123,3 +123,29 @@ canvas {
     max-height: 80vh;
     display: none;
 }
+
+.presets{
+    display: flex;
+    flex-wrap:wrap;
+    gap:var(--gutter-sm);
+}
+.presets button {
+    border: none;
+    outline: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease,
+        box-shadow 0.2s ease;
+   background-color: rgb(202, 236, 192);
+}
+
+.presets button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
