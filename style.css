@@ -1,117 +1,125 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 html,body{
-    width:100%;
+width:100%;
+min-height:100%;
 }
 html{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     background-color: var(--bg-primary-color);
-     color:var(--text-primary)
+font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+background-color:var(--bg-primary-color);
+color:var(--text-primary);
 }
 main{
-    width:100%;
+width:100%;
 }
 main section{
-    display: flex;
-    gap :var(--gutter-xl);
-    width: 100%;
-    padding-top: var(--padding-lg);
-    padding-left: var(--padding-md);
+display:flex;
+gap:var(--gutter-xl);
+width:100%;
+padding:var(--padding-lg) var(--padding-md);
 }
-
 .btn{
-    padding: var(--padding-sm) var(--padding-lg);
-    border:none;
-    outline:none;
-    border-radius: var(--border-r-md);
-    background-color:var(--bg-tertiary-color) ;
-    cursor: pointer;
-    color:var(--bg-primary-color)
+padding:var(--padding-sm) var(--padding-lg);
+border:none;
+outline:none;
+border-radius:var(--border-r-sm);
+background-color:var(--bg-tertiary-color);
+cursor:pointer;
+color:var(--bg-primary-color);
 }
 #reset-btn{
-    background-color: var(--bg-reset);
-    color:var(--text-primary);
-    font-size: var(--font-size-md);
+background-color:var(--bg-reset);
+color:var(--text-primary);
+font-size:var(--font-size-md);
 }
 #download-btn{
-    background-color: var(--bg-download) ;
-    color:var(--text-primary);
-    font-size: var(--font-size-md);
+background-color:var(--bg-download);
+color:var(--text-primary);
+font-size:var(--font-size-md);
 }
 main section .left{
-    display:flex;
-    flex-direction: column;
-    gap:var(--gutter-xl);
-    width: 60%;
+display:flex;
+flex-direction:column;
+gap:var(--gutter-xl);
+flex:1 1 0;
+min-width:0;
 }
-
 main section .top{
-    display: flex;
-    justify-content: space-evenly;  
-    align-items: center;
-    gap: var(--gutter-md);
+display:flex;
+justify-content:space-evenly;
+align-items:center;
+gap:var(--gutter-md);
 }
-
 main section .bottom{
-    background-color: var(--bg-secondary-color);
-    padding: var(--padding-sm);
-    width:100%;
-    aspect-ratio: 5/3.1;
-    border-radius: var(--border-r-md);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+background-color:var(--bg-secondary-color);
+width:100%;
+aspect-ratio:5/3.2;
+padding:var(--padding-sm);
+border-radius:var(--border-r-md);
+display:flex;
+gap:var(--gutter-sm);
+justify-content:center;
+align-items:center;
 }
-
 main section .bottom .placeholder{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 0.6;
+display:flex;
+flex-direction:column;
+align-items:center;
+opacity:.6;
 }
 main section .bottom .placeholder i{
-    font-size: 10rem;
+font-size:7rem;
 }
 main section .bottom .placeholder p{
-    font-size: var(--font-size-lg);
+font-size:var(--font-size-lg);
 }
 main section .right{
-    width:35%;
-    background-color: var(--bg-secondary-color);
-    padding: var(--padding-sm);
-    border-radius: var(--border-r-lg);
-    display: flex;
-    flex-direction: column;
-    gap: var(--gutter-md);
+flex:0 0 37%;
+background-color:var(--bg-secondary-color);
+padding:var(--padding-md);
+border-radius:var(--border-r-lg);
+display:flex;
+flex-direction:column;
+gap:var(--gutter-md);
+min-width:0;
+min-height:580px;
 }
 main section .right .filters{
-    display:flex;
-    flex-direction: column;
-    gap: var(--gutter-lg);
+display:flex;
+flex-direction:column;
+gap:var(--gutter-sm);
 }
 main section .right .filter{
-    width: 100%;
+width:100%;
 }
 main section .right .filter input{
-    width: 100%;
-    outline: none;
-    margin-top: var(--margin-sm);
-    appearance: none;
+width:100%;
+outline:none;
+border:none;
+margin-top:var(--margin-sm);
+appearance:none;
+-webkit-appearance:none;
 }
 main section .right .filter input::-webkit-slider-runnable-track{
-background-color: var(--bg-tertiary-color);
-height:5px;
-border-radius: 20px;
+background-color:var(--bg-tertiary-color);
+height:2px;
+border-radius:20px;
 }
 main section .right .filter input::-webkit-slider-thumb{
-    cursor: pointer;
-    appearance: none;
-    width: 15px;
-    height:15px;
-    border-radius: 50%;
-    background-color: rgb(218, 16, 16);
-    margin-top: -5px;
+cursor:pointer;
+appearance:none;
+-webkit-appearance:none;
+width:8px;
+height:8px;
+border-radius:50%;
+background-color:rgb(218,16,16);
+margin-top:-3px;
+}
+canvas {
+    max-width: 90%;
+    max-height: 80vh;
+    display: none;
 }

@@ -13,11 +13,10 @@
  <main>
     <section>
         <div class="left">
-
             <div class="top">
                 <label for="image-input" class="btn">
                     Choose Image
-                    <input type="file" id="image-input" accet="image/*" hidden>
+                 <input type="file" id="image-input" accet="image/*" hidden>
                 </label>
                 <button id="reset-btn" class="btn">Reset</button>
                 <button id="download-btn" class="btn">Download</button> 
@@ -28,14 +27,12 @@
                    <i class="ri-image-line"></i>
                    <p> No Image chose </p>
                 </div>
+                <canvas id="image-canvas"></canvas>
             </div>
         </div>
         <div class="right">
             <h2>Filters</h2>
             <div class="filters">
-               <div class="filter">
-               <p>Brightness</p>
-              <input name="brightness" value="50" type="range" min="0" max="100">
                </div>
             </div>
 
